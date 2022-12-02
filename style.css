@@ -1,3 +1,45 @@
-h1 {
-  color: blue;
+* {
+  --main-bg-color: #fff;
+  --header-text-color: #172b4d;
+  --normal-text-color: #344563;
+  --secondary-text-color: #6070ff;
+  --light-text-color: #7f8cff;
+  --main-font-family: 'Poppins', sans-serif;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* ------------------------------------HEADER SECTION-------------------------------------------------- */
+.header {
+  background-image: url("Images/header-background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  min-width: 375px;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--main-font-family);
+  color: var(--light-text-color);
+  height: 20px;
+  width: 76px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+
+.menu-container {
+  width: 18px;
+  height: 12px;
+  margin-right: 12px;
+  margin-top: 3px;
 }
