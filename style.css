@@ -12,7 +12,7 @@
 }
 
 /* ------------------------------------HEADER SECTION-------------------------------------------------- */
-.header {
+header {
   background-image: url("Images/header-background-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,9 +23,22 @@
   align-items: center;
 }
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-container {
+  position: relative;
+  right: 20px;
+  top: 10px;
+  width: 18px;
+}
+
 .logo {
   font-family: var(--main-font-family);
-  color: var(--light-text-color);
+  color: var(--secondary-text-color);
   height: 20px;
   width: 76px;
   font-size: 18px;
@@ -33,10 +46,14 @@
   line-height: 20px;
   letter-spacing: 0;
   margin-left: 12px;
-  margin-top: 4px;
+  margin-top: 10px;
 }
 
-.menu-container {
+a {
+  text-decoration: none;
+}
+
+.menu-container a {
   width: 18px;
   height: 12px;
   margin-right: 12px;
@@ -111,4 +128,16 @@
   height: 20px;
   position: relative;
   top: 25px;
+}
+
+ul {
+  width: 170.7px;
+  list-style-type: none;
+  display: flex;
+
+  /* border: 1px solid red; */
+  position: relative;
+  top: 25px;
+  justify-content: space-between;
+  align-items: center;
 }
