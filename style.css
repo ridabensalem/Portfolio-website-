@@ -152,7 +152,7 @@ ul {
   height: 100%;
   background-color: var(--gray-background-color);
   padding: 16px;
-  gap: 100px;
+  gap: 80px;
   display: grid;
   grid-template-columns: 80px;
   column-gap: 150px;
@@ -499,11 +499,21 @@ ul {
   text-decoration: none;
 }
 
+.frameworks {
+  position: relative;
+  top: 46px;
+}
+
 .frameworks img,
 .final-skills img {
   position: relative;
   left: 130px;
   top: 5px;
+}
+
+.separator-first {
+  position: relative;
+  top: 20px;
 }
 
 /* ------------------------------------------------------------HOVER-ACTIVE -DISABLED BUTTONS--------------------------------------------------------- */
