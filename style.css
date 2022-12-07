@@ -5,10 +5,24 @@
   --secondary-text-color: #6070ff;
   --light-text-color: #7f8cff;
   --main-font-family: 'Poppins', sans-serif;
+  --black-color: #000;
+  --background-active-button: #2230d2;
+  --button-disabled-text-color: #5e6c84;
+  --gray-background-color: #e5e5e5;
+  --gray--light-color: #f7f7f9;
+  --tag-background-color: #ebebff;
+  --button-color: #396df2;
+  --tag-color: #7a869a;
 
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+ul[role='list'],
+ol[role='list'],
+li {
+  list-style: none;
 }
 
 /* ------------------------------------HEADER SECTION-------------------------------------------------- */
@@ -71,18 +85,14 @@ a {
   align-items: center;
   padding: 114px 24px;
   gap: 12px;
-
-  /* border: 1px solid blueviolet; */
 }
 
-.primary-text {
+.primary-text-first {
   width: 327px;
   height: 150px;
-
-  /* border: 1px solid red; */
 }
 
-.primary-text h1 {
+.primary-text-first h1 {
   height: 150px;
   font-family: var(--main-font-family);
   color: var(--header-text-color);
@@ -92,7 +102,7 @@ a {
   line-height: 52px;
 }
 
-.primary-text p {
+.primary-text-first p {
   width: 327px;
   height: 146px;
   font-family: var(--main-font-family);
@@ -101,8 +111,6 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: var(--normal-text-color);
-
-  /* border: 1px solid green; */
   position: relative;
   top: 10px;
 }
@@ -117,8 +125,6 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-
-  /* border: 2px solid red; */
   position: relative;
   top: 12px;
 }
@@ -134,10 +140,437 @@ ul {
   width: 170.7px;
   list-style-type: none;
   display: flex;
-
-  /* border: 1px solid red; */
   position: relative;
   top: 25px;
   justify-content: space-between;
   align-items: center;
+}
+
+/* -----------------------------------------------WORKS SECTION----------------------------------------------------------------------------- */
+.works-container {
+  min-width: 375px;
+  height: 100%;
+  background-color: var(--gray-background-color);
+  padding: 16px;
+  gap: 80px;
+  display: grid;
+  grid-template-columns: 80px;
+  column-gap: 150px;
+}
+
+.card-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  width: 327px;
+  height: 550px;
+  background-color: var(--main-bg-color);
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.card-works > img {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.primary-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  width: 295px;
+  height: 80px;
+}
+
+.primary-text h3 {
+  width: 295px;
+  height: 36px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--header-text-color);
+}
+
+.description-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+  width: 295px;
+  height: 32px;
+}
+
+.description-tags .first-tag {
+  font-family: var(--main-font-family);
+  line-height: 16px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--header-text-color);
+  font-size: 13px;
+}
+
+.description-tags .second-tag,
+.description-tags .third-tag {
+  color: var(--tag-color);
+  font-size: 13px;
+  font-style: normal;
+}
+
+.counter {
+  position: relative;
+  left: 2px;
+}
+
+.details {
+  width: 295px;
+  height: 76px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--header-text-color);
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  width: 45px;
+  height: 24px;
+  margin: 10px;
+  position: relative;
+  top: -25px;
+  right: 20px;
+}
+
+.tags a {
+  text-decoration: none;
+  font-family: var(--main-font-family);
+  background-color: var(--tag-background-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.tags ul {
+  display: flex;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  gap: 10px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  list-style: none;
+}
+
+.tags li {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: var(--tag-background-color);
+  border-radius: 8px;
+}
+
+.button-action {
+  width: 295px;
+  height: 72px;
+  position: relative;
+  top: 10px;
+}
+
+.button-action button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
+  left: 0;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: var(--main-bg-color);
+  color: var(--button-color);
+}
+
+.primary-text-secondary h3 {
+  width: 295px;
+  height: 80px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--header-text-color);
+}
+
+/* ------------------------------------------------------------ABOUT MY SELF SECTION--------------------------------------------- */
+.about-my-self {
+  display: flex;
+  width: 375px;
+  height: 1263px;
+  background-image: url(Images/about-my-self-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+}
+
+.primary-text-second {
+  width: 327px;
+  height: 101px;
+}
+
+.primary-text-second h1 {
+  font-family: var(--main-font-family);
+  color: var(--header-text-color);
+  font-size: 40px;
+  line-height: 52px;
+  width: 327px;
+  height: 101px;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03rem;
+}
+
+.primary-text-second p {
+  width: 327px;
+  height: 144px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--normal-text-color);
+  position: relative;
+  top: 10px;
+}
+
+.button-action-second {
+  width: 162px;
+  height: 148px;
+  position: relative;
+  top: 40px;
+}
+
+.button-action-second button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 10px;
+  width: 162px;
+  height: 48px;
+  left: 0;
+  font-weight: 500;
+  font-size: 17px;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: var(--main-bg-color);
+  color: var(--button-color);
+}
+
+/* ----------------------------------------------------------------------SKILLS SECTION ----------------------------------------------------------------  */
+.skill-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 327px;
+}
+
+.skill-section-header {
+  width: 327px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 12px;
+}
+
+.skill-section li h4 {
+  color: var(--black-color);
+  height: 24px;
+  width: 12px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.skill-section li a {
+  text-decoration: none;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 8px;
+  margin-top: -20px;
+  gap: 12px;
+  width: 327px;
+  height: 248.15px;
+}
+
+.js,
+.html,
+.css {
+  width: 303px;
+  height: 66.72px;
+  border-radius: 8px;
+  background-color: var(--gray--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.js img,
+.html img,
+.css img {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 10px;
+  top: calc(50% - 48px / 2 - 0.36px);
+}
+
+.js h5,
+.html h5,
+.css h5 {
+  position: absolute;
+  height: 24px;
+  left: 76px;
+  right: 12px;
+  top: calc(50% - 24px / 2 - 0.36px);
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.others {
+  width: 327px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 12px;
+}
+
+.others li h6 {
+  color: var(--black-color);
+  height: 24px;
+  width: 12px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.others li a {
+  text-decoration: none;
+}
+
+.frameworks {
+  position: relative;
+  top: 46px;
+}
+
+.frameworks img,
+.final-skills img {
+  position: relative;
+  left: 130px;
+  top: 5px;
+}
+
+.separator-first {
+  position: relative;
+  top: 20px;
+}
+
+/* ------------------------------------------------------------HOVER-ACTIVE -DISABLED BUTTONS--------------------------------------------------------- */
+button:active {
+  background: var(--background-active-button);
+  font-family: var(--main-font-family);
+  color: var(--main-bg-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+button:hover {
+  background: var(--secondary-text-color);
+  font-family: var(--main-font-family);
+  color: var(--main-bg-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+button:disabled {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--button-disabled-text-color);
+}
+
+.button-action-second button:hover {
+  background: var(--secondary-text-color);
+  font-family: var(--main-font-family);
+  color: var(--main-bg-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.button-action-second button:active {
+  background: var(--background-active-button);
+  font-family: var(--main-font-family);
+  color: var(--main-bg-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.button-action-second button:disabled {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--button-disabled-text-color);
 }
