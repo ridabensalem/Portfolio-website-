@@ -13,6 +13,7 @@
   --tag-background-color: #ebebff;
   --button-color: #396df2;
   --tag-color: #7a869a;
+  --footer-background: #6070ff;
 
   padding: 0;
   margin: 0;
@@ -573,4 +574,50 @@ button:disabled {
   font-size: 17px;
   line-height: 24px;
   color: var(--button-disabled-text-color);
+}
+
+/* ----------------------------------------------------------FOOTER CONTACT FORM----------------------------------------------- */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  width: 375px;
+  height: 779px;
+  background-image: url(Images/shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--footer-background);
+  border-radius: 70px 0 10px;
+}
+
+.contact-global-container {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  width: 801px;
+  height: 56px;
+  font-family: var(--main-font-family);
+  color: var(--main-bg-color);
+  padding-top: 35%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 52px;
+}
+
+.contact-text-container {
+  margin-left: 100px;
+}
+
+.contact-paragraph {
+  width: 327px;
+  height: 102px;
+  color: var(--tag-background-color);
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 30px;
+  text-align: center;
+  padding-top: 4%;
 }
