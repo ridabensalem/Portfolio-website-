@@ -667,7 +667,7 @@ button:disabled {
 }
 
 ::placeholder {
-  color: #172b4d !important;
+  color: #172b4d;
 }
 
 .text-area {
