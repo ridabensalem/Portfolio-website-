@@ -13,7 +13,6 @@
   --tag-background-color: #ebebff;
   --button-color: #396df2;
   --tag-color: #7a869a;
-  --footer-background: #6070ff;
 
   padding: 0;
   margin: 0;
@@ -585,7 +584,7 @@ button:disabled {
   background-image: url(Images/shapes-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--footer-background);
+  background-color: var(--secondary-text-color);
   border-radius: 70px 0 10px;
 }
 
