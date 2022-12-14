@@ -117,7 +117,7 @@ a {
 
 .supportive-text {
   flex-direction: row;
-  color: #6070ff;
+  color: var(--secondary-text-color);
   width: 130px;
   height: 24px;
   font-family: var(--main-font-family);
@@ -735,4 +735,3 @@ button:disabled {
   line-height: 24px;
   color: var(--button-disabled-text-color);
 }
-
