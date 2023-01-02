@@ -13,10 +13,24 @@
 <body>
     <main class="Portfolio-container">
         <header>
-            <nav>
-               <a href="#" class="logo">RIDA</a> 
-             <a href="#" class="menu-container"><img src="Images/icon-menu.png" alt="menu-icon"></a>   
-            </nav>
+          <nav>
+            <a href="#" class="logo">RIDA</a> 
+          <a href="#" class="menu-container" onclick="openNav()"><img src="Images/icon-menu.png" alt="menu-icon"></a>  
+          <div id="myNav" class="overlay">
+           <a href="javascript:void(0)" 
+              class="closebtn"
+              onclick="closeNav()">×</a>
+           
+           <div class="overlay-content">
+               <a href="#">Portfolio</a>
+               <a href="#">About</a>
+               <a href="#">Contact</a>
+           
+           </div>
+       </div>
+   
+         </div> 
+         </nav>
         </header>
             <section class="headline-section">
                 <div class="primary-text-first"> 
@@ -270,6 +284,17 @@
 
       </section>
     </main>
+    <script>
+      function openNav() {
+          document.getElementById(
+            "myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+          document.getElementById(
+            "myNav").style.width = "0%";
+      }
+  </script>
     
 </body>
 </html>
