@@ -8,15 +8,30 @@
     <link rel="preconnect"href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Portfolio website </title>
 </head>
 <body>
     <main class="Portfolio-container">
         <header>
-            <nav>
-               <a href="#" class="logo">RIDA</a> 
-             <a href="#" class="menu-container"><img src="Images/icon-menu.png" alt="menu-icon"></a>   
-            </nav>
+          <nav>
+            <a href="#" class="logo">RIDA</a> 
+          <a href="#" class="menu-container" onclick="openNav()"><img src="Images/icon-menu.png" alt="menu-icon"></a>  
+          <div id="myNav" class="overlay">
+           <a href="javascript:void(0)" 
+              class="closebtn"
+              onclick="closeNav()">×</a>
+           
+           <div class="overlay-content">
+               <a href="#Portfolio" onclick="closeNav()">Portfolio</a>
+               <a href="#About" onclick="closeNav()">About</a>
+               <a href="#Contact" onclick="closeNav()" >Contact</a>
+           
+           </div>
+       </div>
+   
+         </div> 
+         </nav>
         </header>
             <section class="headline-section">
                 <div class="primary-text-first"> 
@@ -51,7 +66,7 @@
                 </div>
             </section>
             </div>
-            <section class="works-container">
+            <section class="works-container" id="Portfolio">
                 <!-- ----------------------------Card number 1--------------------------------------- -->
               <div class="card-works">
                     <img src="Images/Snapshoot Portfolio.png" alt="Snapshoot images"> 
@@ -177,7 +192,7 @@
                     
             </section>
             <!-- ---------------------------------------------------------ABOUT MY SELF SECTION----------------------------------------------- -->
-            <section class="about-my-self">
+            <section class="about-my-self" id="About">
                <div class="primary-text-second"> 
                     <h1>About<br>  myself<br> </h1>
                     <p>
@@ -252,7 +267,7 @@
             </section>
 
               <!-- -----------------------------------------FOOTER CONTACT FORM ----------------------------------------------- -->
-      <section class="contact-form">
+      <section class="contact-form" id="Contact">
         <div class="contact-global-container">
          <h2 class="contact-text-container">Contact me </h2>
          <p class="contact-paragraph">If you have an application  you <br>are interested in developing, a <br> feature that you need built or a <br> project that needs coding.
@@ -270,6 +285,7 @@
 
       </section>
     </main>
+   
     
 </body>
 </html>
