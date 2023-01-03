@@ -422,11 +422,12 @@ ul {
 }
 
 .overlay a {
+  font-family: var(--main-font-family);
   padding: 8px;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 32px;
   color: #fff;
-  font-weight: bolder;
+  font-weight: 700;
   display: block;
   transition: 0.3s;
 }
@@ -724,9 +725,8 @@ button:disabled {
   background: #6070ff;
   backdrop-filter: blur(10px);
   mix-blend-mode: multiply;
-  font-family: "poppins", sans-serif;
+  font-family: var(--main-font-family);
   overflow-x: hidden;
-  transition: 0.5s;
 }
 
 .overlay-content {
@@ -741,8 +741,8 @@ button:disabled {
 .overlay .closebtn {
   position: absolute;
   top: 20px;
-  right: 45px;
-  font-size: 60px;
+  right: 30px;
+  font-size: 30px;
 }
 
 @media screen and (max-height: 450px) {
@@ -753,7 +753,7 @@ button:disabled {
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
-    right: 35px;
+    left: 520px;
   }
 }
 
